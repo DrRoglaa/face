@@ -1,10 +1,14 @@
 import React from 'react';
+import Tilt from 'react-parallax-tilt';
+import brain from './brain.jpg';
 
 const Logo = () => {
         return (
-        <div className="ma4 mt0">
-
-        </div>
+            <Tilt>
+            <div style={{ width: '300px', backgroundColor: 'darkgreen' }}>
+            <p><img alt='brain' src={brain} /></p>
+            </div>
+          </Tilt>
     );
 }
 
